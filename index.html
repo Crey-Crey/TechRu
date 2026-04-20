@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>World Tech | Divine Machinery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="machine-background">
+        <!-- Текстура шума поверх изображения -->
+        <div class="noise-layer"></div>
+        
+        <div class="interface-container">
+            <header>
+                <div class="glitch-title">DIVINE MACHINERY TERMINAL</div>
+            </header>
+
+            <div id="output-display" class="scrolling-content">
+                <p>Welcome. You're probably looking for worlds' info, but for now here's info only about World Tech.</p>
+                <p>You need to write a number for the info you'd like to read.</p>
+            </div>
+
+            <div class="control-panel">
+                <button onclick="fetchInfo(1)">1 - World information</button>
+                <button onclick="fetchInfo(2)">2 - World religion</button>
+                <button onclick="fetchInfo(3)">3 - World political state</button>
+                <button onclick="fetchInfo(4)">4 - Facts</button>
+                <button onclick="exitRitual()" class="exit-btn">5 - End session</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
